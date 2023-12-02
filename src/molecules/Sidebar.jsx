@@ -1,4 +1,4 @@
-import { Searchbar } from "./Searchbar";
+import { Searchbar } from "../atoms/Searchbar";
 
 export const Sidebar = ({}) => {
     return (

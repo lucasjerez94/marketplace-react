@@ -19,6 +19,7 @@ body {
 .app-main-container {
   display: flex;
   flex: 1;
+  border: 1px solid white;
 }
 /*-------------------------------*/
 
@@ -29,6 +30,7 @@ body {
   background-color: rgb(11, 11, 11);
   color: #fff;
   padding: 10px;
+  height: 25px;
   overflow: hidden;
   text-align: center;
   display: flex;

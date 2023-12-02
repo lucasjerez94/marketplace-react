@@ -1,9 +1,6 @@
 import './App.css';
-import {Header} from './components/Header';
-import {Hero} from './components/Hero';
-import {Sidebar} from './components/Sidebar';
-import {Main} from './components/Main';
-import {Footer} from './components/Footer';
+import {Header, Hero, Main, Footer} from './atoms';
+import {Sidebar} from './molecules';
 
 function App() {
   return (
