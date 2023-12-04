@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
+  background-color: black;
 }
 
 .app-container {
@@ -26,7 +27,6 @@ body {
 
 /*Header*/
 .header-container {
-  background-color: black;
   color: white;
   padding: 10px;
   height: 25px;
@@ -37,6 +37,8 @@ body {
   justify-content: space-between;
   align-items: center;
   position: fixed;
+  background-color: black;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
 
 .h1-header {
@@ -77,7 +79,7 @@ body {
   flex: 1;
   padding: 100px;  
   text-align: center;
-  color: black;
+  color: white;
 }
 
 .h1-hero {
@@ -94,10 +96,10 @@ body {
 .sidebar-container {
   width: 50%;
   margin: 0px 40px;
-  color: black;
+  color: white;
   padding: 10px;
   text-align: center;
-  box-shadow: 0 80px 50px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.8); 
 }
 
 .ul-sidebar {
@@ -109,7 +111,7 @@ body {
 
 .ul-sidebar a {
   text-decoration: none;
-  color: black;
+  color: white; 
   display: block;
   padding: 5px;
 }
@@ -127,19 +129,19 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.806);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
   margin: 0 60px;
+  color: white;
 }
 /*-------------------------------*/
 
 /*TemplateCard*/
 .templatecard-container {
   width: 250px;
-  border: 1px solid #ddd;
+  border: 0.5px solid rgb(72, 72, 72);
   border-radius: 8px;
   overflow: hidden;
   margin: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 10px;
 }
 
@@ -168,9 +170,11 @@ body {
 
 /*Footer*/
 .footer-container {
-  background-color: black;
+  margin-top: 50px;
+  height: 25px;
   color: white;
   padding: 10px;
   text-align: center;
+  background-color: #1a1a1a;
 }
 /*-------------------------------*/
