@@ -38,6 +38,16 @@ export const Main = () => {
                 content="La Torre Eiffel"
                 imageSrc="https://viajes.nationalgeographic.com.es/medio/2022/07/13/paris_37bc088a_1280x720.jpg"
             />
+            <TemplateCard
+                title="Mar del plata"
+                content="Leon marino, ciudad de Mar del Plata"
+                imageSrc="https://www.mardelplata.gob.ar/sites/default/files/texto_slide/xMDP2.jpg.pagespeed.ic.oKataM9oHk.jpg"
+            />
+            <TemplateCard
+                title="Usuahia"
+                content="Ciudad del fin del mundo"
+                imageSrc="https://radio3cadenapatagonia.com.ar/wp-content/uploads/2023/02/ushuaia_turismo_letras.jpg"
+            />
         </div>
     );
 };
