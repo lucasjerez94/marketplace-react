@@ -1,4 +1,4 @@
-  const TemplateCard = ({title, content, imageSrc}) => {
+const TemplateCard = ({title, content, imageSrc}) => {
 
   return (
     <div className="templatecard-container">
