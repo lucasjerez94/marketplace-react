@@ -122,6 +122,32 @@ body {
 }
 /*-------------------------------*/
 
+/*Searchbar*/
+.h3-searchbar {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.searchbar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8px;
+}
+
+.input-searchbar {
+  padding: 8px;
+  border: none;
+  outline: none;
+  background-color: #0A0A0A;
+  color: #fff;
+  font-size: 16px;
+}
+
+.input-searchbar:focus {
+  border: 1px solid #fff;
+}
+/*-------------------------------*/
 
 /*Main*/
 .main-container {

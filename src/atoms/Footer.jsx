@@ -1,7 +1,7 @@
 export const Footer = () => {
     return(
         <div className="footer-container">
-            <p>@MarketPlace</p>
+            <p className="p-footer">@MarketPlace</p>
         </div>
     );
 };

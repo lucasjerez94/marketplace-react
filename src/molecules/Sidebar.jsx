@@ -1,9 +1,9 @@
 import { Searchbar } from "../atoms/Searchbar";
 
-export const Sidebar = ({}) => {
+export const Sidebar = ({onSearch}) => {
     return (
       <div className="sidebar-container">
-        <Searchbar />
+        <Searchbar onSearch={onSearch} />
         <h2>Sidebar</h2>
         <ul className="ul-sidebar">
           <li><a href="#">Enlace 1</a></li>

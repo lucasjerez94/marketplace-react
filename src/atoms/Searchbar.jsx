@@ -1,15 +1,12 @@
 import { useState } from "react";
 
-export const Searchbar = ({ onSearch = () =>{} }) => {
+    export const Searchbar = ({onSearch}) => {
+        const [searchTerm, setSearchTerm] = useState('');
 
-    const [searchTerm, setSearchTerm] = useState('');
-
-    const handleInputChange = (event) => {
-    setSearchTerm(event.target.value);
-    };
-
-    const handleSearch = () => {
-    onSearch(searchTerm);
+        const handleChange = (event) => {
+            const term = event.target.value;
+            setSearchTerm(term);
+            onSearch(term);
     };
 
     return(
@@ -18,11 +15,10 @@ export const Searchbar = ({ onSearch = () =>{} }) => {
             <input
                 className="input-searchbar"
                 type="text"
-                placeholder="Buscar..."
+                placeholder="Search..."
                 value={searchTerm}
-                onChange={handleInputChange}
+                onChange={handleChange}
             />
-            <button onClick={handleSearch}>Buscar</button>
         </div>
     );
 };
