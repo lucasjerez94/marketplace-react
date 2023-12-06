@@ -14,8 +14,8 @@ body {
 
 .app-hero-container {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  
+  align-items: flex-start;
 }
 
 .app-main-container {
@@ -167,12 +167,13 @@ body {
 
 /*TemplateCard*/
 .templatecard-container {
-  width: 250px;
+  width: 30%;
   border: 0.5px solid rgb(72, 72, 72);
   border-radius: 8px;
   overflow: hidden;
   margin: 10px;
   padding: 10px;
+  box-sizing: border-box;
 }
 
 .card-container {
