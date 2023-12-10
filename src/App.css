@@ -162,6 +162,12 @@ body {
   margin: 0 60px;
   color: white;
   flex: 0 0 65%;
+
+}
+.no-results {
+  font-size: 25px;
+  margin-left: 150px;
+  margin-top: 150px
 }
 /*-------------------------------*/
 
