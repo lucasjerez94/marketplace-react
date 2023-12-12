@@ -148,16 +148,12 @@ body {
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
   margin: 0 60px;
   color: white;
-<<<<<<< HEAD
-=======
   flex: 0 0 65%;
-
 }
 .no-results {
   font-size: 25px;
   margin-left: 150px;
   margin-top: 150px
->>>>>>> 32be50710d281c3d2d6adc264c21187a222fdcd1
 }
 /*-------------------------------*/
 
