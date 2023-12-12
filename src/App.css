@@ -9,7 +9,7 @@ body {
 .app-container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .app-hero-container {
@@ -19,7 +19,6 @@ body {
 
 .app-main-container {
   display: flex;
-  margin: 0 40px;
 }
 /*-------------------------------*/
 
@@ -94,8 +93,8 @@ body {
 
 /*Sidebar*/
 .sidebar-container {
-  height: 1000px;
-  width: 100%;
+  height: 250px;
+  width: 250px;
   margin: 0px 40px;
   color: white;
   padding: 10px;
@@ -125,16 +124,16 @@ body {
 /*-------------------------------*/
 
 /*Searchbar*/
-.h3-searchbar {
-  font-size: 18px;
-  margin-bottom: 8px;
-}
-
 .searchbar-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 8px;
+}
+
+.h3-searchbar {
+  font-size: 18px;
+  margin-bottom: 8px;
 }
 
 .input-searchbar {
@@ -155,6 +154,7 @@ body {
 .main-container {
   display: flex;
   flex-wrap: wrap;
+  gap: 10px;
   justify-content: flex-start;
   align-items: flex-start;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
@@ -220,3 +220,30 @@ body {
   background-color: #1a1a1a;
 }
 /*-------------------------------*/
+
+/*---------MEDIAS QUERYS----------*/
+
+@media screen and (max-width: 768px) {
+  .sidebar-container{
+    width: 100%;
+  }
+
+@media screen and (max-width: 768px) {
+  .searchbar-container {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-container{
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .template-container{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+}
