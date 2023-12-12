@@ -17,14 +17,10 @@ function App() {
       <div className='app-hero-container'>
         <Hero />
       </div>
-      <div className='app-sidebar-main-container'>
-        <div className='app-sidebar-container'>
-          <Sidebar onSearch={handleSearch} />
-        </div>
         <div className='app-main-container'>
+          <Sidebar onSearch={handleSearch} />
           <Main searchTerm={searchTerm} />
         </div>
-      </div>
       <div className='app-footer-container'>
           <Footer />
       </div>
