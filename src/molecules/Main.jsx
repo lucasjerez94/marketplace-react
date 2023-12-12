@@ -38,7 +38,7 @@ export const Main = ({ searchTerm }) => {
   return (
     <div className="main-container">
       {searchTerm && matchingCards.length === 0 ? (
-        <p>No hay resultados coincidentes. Intente con otra búsqueda.</p>
+        <p className="no-results">No search results found. Try adjusting your filters.</p>
       ) : (
         matchingCards.map((card, index) => (
           <TemplateCard

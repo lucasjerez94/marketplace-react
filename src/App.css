@@ -8,19 +8,32 @@ body {
 
 .app-container {
   display: flex;
+	align-items: center;
+	justify-content: space-between;
   flex-direction: column;
   min-height: 100vh;
 }
 
 .app-hero-container {
   display: flex;
-  
-  align-items: flex-start;
+	align-items: center;
+	justify-content: space-between;
+  flex: 1;
+}
+.app-sidebar-main-container{
+  display: flex;
+  flex-direction: row;
+	justify-content: space-between;
 }
 
 .app-main-container {
   display: flex;
+	justify-content: space-between;
   margin: 0 40px;
+}
+
+.app-footer-container {
+  width: 100%;
 }
 /*-------------------------------*/
 
@@ -94,15 +107,15 @@ body {
 /*-------------------------------*/
 
 /*Sidebar*/
-.sidebar-container {
-  height: 1000px;
-  width: 100%;
+.app-sidebar-container {
+  width: 50%;
+  height: auto;
   margin: 0px 40px;
   color: white;
   padding: 10px;
   text-align: center;
   box-shadow: 0 0 30px rgba(255, 255, 255, 0.8); 
-  flex: 0 0 20%;
+  margin-bottom: 10px;
 }
 
 .ul-sidebar {
@@ -125,68 +138,38 @@ body {
 }
 /*-------------------------------*/
 
-/*Searchbar*/
-.h3-searchbar {
-  font-size: 18px;
-  margin-bottom: 8px;
-}
-
-.searchbar-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 8px;
-}
-
-.input-searchbar {
-  padding: 8px;
-  border: none;
-  outline: none;
-  background-color: #0A0A0A;
-  color: #fff;
-  font-size: 16px;
-}
-
-.input-searchbar:focus {
-  border: 1px solid #fff;
-}
-/*-------------------------------*/
 
 /*Main*/
 .main-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: space-around;
+  align-items: center;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
   margin: 0 60px;
   color: white;
-  flex: 0 0 65%;
 }
 /*-------------------------------*/
 
 /*TemplateCard*/
 .templatecard-container {
-  width: 30%;
+  width: 250px;
   border: 0.5px solid rgb(72, 72, 72);
   border-radius: 8px;
   overflow: hidden;
   margin: 10px;
   padding: 10px;
-  box-sizing: border-box;
 }
 
 .card-container {
   padding: 16px;
-  max-width: 100%; 
-  max-height: 200px;
 }
 
 .card-image {
   width: 100%;
   height: auto;
   max-width: 100%; 
-  max-height: 300px;
+  max-height: 200px;
   object-fit: cover; 
 }
 
@@ -198,10 +181,6 @@ body {
 .p-templatecard {
   font-size: 14px;
   text-align: center;
-}
-
-.highlighted-card {
-  border: 2px solid #ffcc00;
 }
 /*-------------------------------*/
 
@@ -215,3 +194,16 @@ body {
   background-color: #1a1a1a;
 }
 /*-------------------------------*/
+@media (max-width: 768px) {
+  .app-sidebar-main-container{
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px ;
+  }
+  .app-hero-container{
+    top: 0;
+  }
+  .app-sidebar-container {
+    top: 1;
+  }
+}

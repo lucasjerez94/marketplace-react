@@ -9,7 +9,7 @@ function App() {
 
   const handleSearch = (term) => {
     setSearchTerm(term);
-  };
+  }
 
   return (
     <div className='app-container'>
@@ -17,11 +17,17 @@ function App() {
       <div className='app-hero-container'>
         <Hero />
       </div>
-      <div className='app-main-container'>
-        <Sidebar onSearch={handleSearch} />
-        <Main searchTerm={searchTerm}/>
+      <div className='app-sidebar-main-container'>
+        <div className='app-sidebar-container'>
+          <Sidebar onSearch={handleSearch} />
+        </div>
+        <div className='app-main-container'>
+          <Main searchTerm={searchTerm} />
+        </div>
       </div>
-      <Footer />
+      <div className='app-footer-container'>
+          <Footer />
+      </div>
     </div>
   );
 }
