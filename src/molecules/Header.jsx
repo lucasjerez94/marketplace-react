@@ -1,3 +1,5 @@
+import Button from '../atoms/Button';
+
 export const Header = () => {
     return(
         <div className="header-container">
@@ -9,6 +11,7 @@ export const Header = () => {
                     <li><a href="#">Nosotros</a></li>
                 </ul>
             </nav>
+            <Button />
         </div>
     );
 };

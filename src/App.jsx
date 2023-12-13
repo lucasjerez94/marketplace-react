@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './App.css';
-import {Header, Hero, Footer} from './atoms';
-import {Sidebar, Main} from './molecules';
+import {Hero, Footer} from './atoms';
+import {Header, Sidebar, Main} from './molecules';
 
 function App() {
 
