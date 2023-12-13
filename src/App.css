@@ -216,29 +216,35 @@ body {
 /*-------------------------------*/
 
 /*---------MEDIAS QUERYS----------*/
-
 @media screen and (max-width: 768px) {
   .sidebar-container{
+    margin: 0;
+    margin-bottom: 20px;
     width: 100%;
   }
-
-@media screen and (max-width: 768px) {
   .searchbar-container {
     text-align: center;
   }
-}
-
-@media screen and (max-width: 768px) {
   .main-container{
     flex-direction: column;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .template-container{
+    margin: 0;
     width: 100%;
-    margin-bottom: 20px;
   }
-}
-
+  .templatecard-container {
+    width: 100%;
+    margin: 10px 0; 
+  }
+  .card-container {
+    width: 100%;
+  }
+  .card-image {
+    width: 100%;
+    height: auto; 
+  }
+  .h3-templatecard {
+    font-size: 16px; 
+  }
+  .p-templatecard {
+    font-size: 12px; 
+  }
 }
