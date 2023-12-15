@@ -256,14 +256,62 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
+  }
+  .nav-container {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .navbar-header {
+      margin-right: 0;
+  }
+  .ul-header {
+      flex-wrap: wrap;
+  }
+  .ul-header li {
+      margin-right: 0;
+      margin-bottom: 10px;
+  }
+  .ul-header li:last-child {
+      margin-bottom: 0;
+  }
+  /*SIDEBAR*/
+  .sidebar-container{
+    margin: 0;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  /*SEARCHBAR*/
+  .searchbar-container {
+    text-align: center;
+  }
+  /*MAIN*/
+  .main-container{
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+  }
+  /*TEMPLATECARD*/
+  .templatecard-container {
+    width: 100%;
+    margin: 10px 0; 
+  }
+  .card-container {
+    width: 100%;
+  }
+  .card-image {
+    width: 100%;
+    height: auto; 
+  }
+  .h3-templatecard {
+    font-size: 16px; 
+  }
+  .p-templatecard {
+    font-size: 12px; 
   }
 }
 
 /*Small size/mobile*/
 @media screen and (max-width: 769px) {
-  /*APP-MAIN-CONTAINER*/
-  
   /*NAVBAR*/
   .nav-container {
     width: 100%;
