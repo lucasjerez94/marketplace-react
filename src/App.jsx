@@ -12,7 +12,7 @@ function App() {
   }
 
   return (
-    <div className='app-container'>
+    <div className='app-header-container'>
       <Header />
       <div className='app-hero-container'>
         <Hero />

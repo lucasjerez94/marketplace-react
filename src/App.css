@@ -6,7 +6,7 @@ body {
   background-color: black;
 }
 
-.app-container {
+.app-header-container {
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -20,6 +20,7 @@ body {
 .app-main-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 /*-------------------------------*/
 
@@ -193,6 +194,7 @@ body {
   margin: 0 60px;
   color: white;
   width: 65%;
+  flex-grow: 1;
 }
 
 .no-results {
@@ -248,7 +250,20 @@ body {
 /*-------------------------------*/
 
 /*---------MEDIAS QUERYS----------*/
-@media screen and (max-width: 768px) {
+/*Medium size/tablets*/
+@media screen and (max-width: 1023px){
+  .app-main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+  }
+}
+
+/*Small size/mobile*/
+@media screen and (max-width: 769px) {
+  /*APP-MAIN-CONTAINER*/
+  
   /*NAVBAR*/
   .nav-container {
     width: 100%;
