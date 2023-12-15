@@ -26,8 +26,8 @@ body {
 /*--Individual Component Styles*--/
 /*Button*/
 .buttom-component {
-  padding: 10px 20px;
-  font-size: 16px;
+  padding: 25px 20px;
+  font-size: 10px;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
   border: none;
@@ -69,12 +69,14 @@ body {
 
 .nav-container {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
 .navbar-header {
   margin-right: 10px;
   font-size: 15px;
+  flex-grow: 1;
 }
 
 .ul-header {
@@ -82,14 +84,6 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-}
-
-.ul-header li {
-  margin-right: 15px;
-}
-
-.ul-header li:last-child {
-  margin-right: 0;
 }
 
 .navbar-header a {
@@ -187,7 +181,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: flex-start;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
   margin: 0 60px;
@@ -214,7 +208,9 @@ body {
 }
 
 .card-container {
-  width: 100%;
+  flex: 1; 
+  margin: 0 1%; 
+  box-sizing: border-box; 
 }
 
 .card-image {
@@ -246,9 +242,27 @@ body {
   text-align: center;
   background-color: #1a1a1a;
 }
+
+.p-footer {
+  margin: 10px;
+}
 /*-------------------------------*/
 
 /*---------MEDIAS QUERYS----------*/
+
+@media screen and (max-width: 1023px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  .templatecard-container {
+    width: 100%; /* Asegura que templated-container ocupe el 100% del ancho en pantallas más pequeñas */
+  }
+
+  .card-container {
+    width: 100%; /* O ajusta según tus necesidades para una columna en pantallas pequeñas */
+  }
+}
 
 /*Medium size/tablets*/
 @media screen and (max-width: 1023px){
