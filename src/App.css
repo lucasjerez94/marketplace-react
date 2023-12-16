@@ -249,27 +249,38 @@ body {
 /*-------------------------------*/
 
 /*---------MEDIAS QUERYS----------*/
-
 @media screen and (max-width: 1023px) {
   .main-container {
     flex-direction: column;
   }
-
   .templatecard-container {
-    width: 100%; /* Asegura que templated-container ocupe el 100% del ancho en pantallas más pequeñas */
+    width: 100%; 
   }
-
   .card-container {
-    width: 100%; /* O ajusta según tus necesidades para una columna en pantallas pequeñas */
+    width: 100%; 
+  }
+  .no-results {
+    font-size: 20px;
+    margin-left: 250px;
+    margin-top: 100px;
   }
 }
 
 /*Medium size/tablets*/
 @media screen and (max-width: 1023px){
+  /*NO-RESULTS*/
+  .no-results {
+    margin: 50px;
+  }
   .app-main-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+  .no-results {
+    font-size: 20px;
+    margin-left: 250px;
+    margin-top: 100px;
   }
   .nav-container {
     width: 100%;
@@ -326,6 +337,10 @@ body {
 
 /*Small size/mobile*/
 @media screen and (max-width: 769px) {
+  /*NO-RESULTS*/
+  .no-results {
+    margin: 50px;
+  }
   /*NAVBAR*/
   .nav-container {
     width: 100%;
