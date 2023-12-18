@@ -25,7 +25,7 @@ body {
 
 /*--Individual Component Styles*--/
 /*Button*/
-.buttom-component {
+.button-component {
   padding: 25px 20px;
   font-size: 10px;
   cursor: pointer;
@@ -34,21 +34,19 @@ body {
 }
 
 .light {
-  background-color: #fff;
-  color: #000;
+  background-color: white;
+  color: black;
 }
 
 .dark {
-  background-color: #333;
-  color: #fff;
+  background-color: black;
+  color: white;
 }
-
 /*-------------------------------*/
 
 
 /*Header*/
 .header-container {
-  color: white;
   padding: 10px;
   height: 25px;
   width: 100%;
@@ -59,6 +57,7 @@ body {
   align-items: center;
   position: fixed;
   background-color: black;
+  color: white;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
 
@@ -105,6 +104,7 @@ body {
   flex: 1;
   padding: 100px;  
   text-align: center;
+  background-color: black;
   color: white;
 }
 

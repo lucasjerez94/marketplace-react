@@ -1,6 +1,10 @@
 import { useState } from "react";
+import { useStyles } from '../StylesContext';
 
     export const Searchbar = ({onSearch}) => {
+
+        const { styles } = useStyles();
+
         const [searchTerm, setSearchTerm] = useState('');
 
         const handleChange = (event) => {
@@ -10,7 +14,7 @@ import { useState } from "react";
     };
 
     return(
-        <div className="searchbar-container">
+        <div className="searchbar-container" style={{ background: styles.darkMode ? 'black' : 'white' }}>
             <h3 className="h3-searchbar">Filter Templates</h3>
             <input
                 className="input-searchbar"
