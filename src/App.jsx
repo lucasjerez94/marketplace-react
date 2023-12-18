@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { StylesProvider } from './StylesContext';
 import './App.css';
 import {Hero, Footer} from './atoms';
 import {Header, Sidebar, Main} from './molecules';
@@ -12,19 +13,21 @@ function App() {
   }
 
   return (
-    <div className='app-header-container'>
-      <Header />
-      <div className='app-hero-container'>
-        <Hero />
-      </div>
-        <div className='app-main-container'>
-          <Sidebar onSearch={handleSearch} />
-          <Main searchTerm={searchTerm} />
+    <StylesProvider>
+      <div className='app-header-container'>
+        <Header />
+        <div className='app-hero-container'>
+          <Hero />
         </div>
-      <div className='app-footer-container'>
-          <Footer />
+          <div className='app-main-container'>
+            <Sidebar onSearch={handleSearch} />
+            <Main searchTerm={searchTerm} />
+          </div>
+        <div className='app-footer-container'>
+            <Footer />
+        </div>
       </div>
-    </div>
+    </StylesProvider>
   );
 }
 export default App;

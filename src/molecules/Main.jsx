@@ -1,7 +1,11 @@
+import { useStyles } from '../StylesContext';
 import TemplateCard from "../atoms/TemplateCard";
 
 export const Main = ({ searchTerm }) => {
-    const cards = [
+    
+  const { styles } = useStyles();  
+  
+  const cards = [
         {title: "California",
         content: "Puente de California",
         imageSrc: "https://media.timeout.com/images/105236338/image.jpg"},
@@ -36,7 +40,7 @@ export const Main = ({ searchTerm }) => {
   );
 
   return (
-    <div className="main-container">
+    <div className="main-container" style={{ background: styles.darkMode ? 'black' : 'white' }}>
       {searchTerm && matchingCards.length === 0 ? (
         <p className="no-results">No search results found. Try adjusting your filters.</p>
       ) : (

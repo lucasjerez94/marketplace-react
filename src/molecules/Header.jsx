@@ -1,8 +1,12 @@
+import { useStyles } from '../StylesContext';
 import Button from '../atoms/Button';
 
 export const Header = () => {
+
+    const { styles } = useStyles();
+
     return(
-        <div className="header-container">
+        <div className="header-container" style={{ background: styles.darkMode ? 'black' : 'white' }}>
             <h1 className="h1-header">MarketPlace</h1>
             <div className='nav-container'>
                 <nav className="navbar-header">

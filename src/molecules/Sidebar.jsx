@@ -1,8 +1,12 @@
+import { useStyles } from '../StylesContext';
 import { Searchbar } from "../atoms/Searchbar";
 
 export const Sidebar = ({onSearch}) => {
+
+    const { styles } = useStyles();
+
     return (
-      <div className="sidebar-container">
+      <div className="sidebar-container" style={{ background: styles.darkMode ? 'black' : 'white' }}>
         <Searchbar onSearch={onSearch} />
         <h2>Sidebar</h2>
         <ul className="ul-sidebar">

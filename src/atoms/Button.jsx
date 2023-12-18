@@ -1,20 +1,18 @@
-import { useState } from "react";
+import { useStyles } from '../StylesContext';
 
 const Button = () => {
-  const [isDarkMode, setDarkMode] = useState(false);
+  const { styles, dispatch } = useStyles();
 
-  const toggleTheme = () => {
-    setDarkMode(!isDarkMode);
+  const toggleMode = () => {
+    dispatch({ type: 'TOGGLE_MODE' });
   };
 
   return (
-    <button
-      className={`buttom-component ${isDarkMode ? 'dark' : 'light'}`}
-      onClick={toggleTheme}
-    >
-      {isDarkMode ? 'Dark Mode' : 'Clear Mode'}
+    <button onClick={toggleMode}>
+      {styles.darkMode ? 'Light Mode' : 'Dark Mode'}
     </button>
   );
 };
 
 export default Button;
+
