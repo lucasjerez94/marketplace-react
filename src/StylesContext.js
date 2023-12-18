@@ -30,5 +30,5 @@ const stylesReducer = (state, action) => {
 };
 
 const initialState = {
-  darkMode: false,
+  darkMode: true,
 };
