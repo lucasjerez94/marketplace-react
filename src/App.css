@@ -104,7 +104,8 @@ body {
   text-align: center;
   padding: 14px 16px;    
   text-decoration: none;
-  color: blueviolet;
+  color: blue;
+  font-weight: bold;
 }
 
 .navbar-header a:hover {
@@ -155,6 +156,8 @@ body {
   color: var(--color-light-text) ;
   display: block;
   padding: 5px;
+  color: blue;
+  font-weight: bold;
 }
 
 .ul-sidebar a:hover {
