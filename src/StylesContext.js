@@ -22,6 +22,8 @@ const stylesReducer = (state, action) => {
       return {
         ...state,
         darkMode: !state.darkMode,
+        backgroundColor: state.darkMode ? 'white' : 'black',
+        textColor: state.darkMode ? 'black' : 'white',
       };
 
     default:
@@ -30,5 +32,7 @@ const stylesReducer = (state, action) => {
 };
 
 const initialState = {
-  darkMode: true,
+  darkMode: false,
+  backgroundColor: 'white',
+  textColor: 'black',
 };

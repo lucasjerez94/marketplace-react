@@ -5,7 +5,7 @@ const TemplateCard = ({title, content, imageSrc}) => {
   const { styles } = useStyles();
 
   return (
-    <div className="templatecard-container" style={{ background: styles.darkMode ? 'black' : 'white' }}>
+    <div className="templatecard-container" style={{ background: styles.backgroundColor, color: styles.textColor }}>
       <div className="card-container">
         <img className="card-image" src={imageSrc} alt={title}/>
         <h3 className="h3-templatecard">{title}</h3>

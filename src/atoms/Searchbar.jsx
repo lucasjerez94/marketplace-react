@@ -14,7 +14,7 @@ import { useStyles } from '../StylesContext';
     };
 
     return(
-        <div className="searchbar-container" style={{ background: styles.darkMode ? 'black' : 'white' }}>
+        <div className="searchbar-container" style={{ background: styles.backgroundColor, color: styles.textColor }}>
             <h3 className="h3-searchbar">Filter Templates</h3>
             <input
                 className="input-searchbar"

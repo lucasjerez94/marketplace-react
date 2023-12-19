@@ -3,7 +3,7 @@ import TemplateCard from "../atoms/TemplateCard";
 
 export const Main = ({ searchTerm }) => {
     
-  const { styles } = useStyles();  
+  const { styles } = useStyles();
   
   const cards = [
         {title: "California",
@@ -40,7 +40,7 @@ export const Main = ({ searchTerm }) => {
   );
 
   return (
-    <div className="main-container" style={{ background: styles.darkMode ? 'black' : 'white' }}>
+    <div className="main-container" style={{ background: styles.backgroundColor, color: styles.textColor }} >
       {searchTerm && matchingCards.length === 0 ? (
         <p className="no-results">No search results found. Try adjusting your filters.</p>
       ) : (

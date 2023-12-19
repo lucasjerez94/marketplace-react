@@ -1,9 +1,17 @@
+/*Variables colors*/
+:root {
+  --color-light-background: white;
+  --color-light-text: black;
+  --color-dark-background: black;
+  --color-dark-text: white;
+}
+/*------------------------------------*/
+
 /*General Component Body Styles*/
 body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
-  background-color: black;
 }
 
 .app-header-container {
@@ -20,6 +28,12 @@ body {
 .app-main-container {
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.app-footer-container {
+  width: 100%;
 }
 /*-------------------------------*/
 
@@ -56,9 +70,9 @@ body {
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  background-color: black;
-  color: white;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  background-color: var(--color-light-background);
+  color: var(--color-light-text) ;
 }
 
 .h1-header {
@@ -87,10 +101,10 @@ body {
 
 .navbar-header a {
   display: block;
-  color: white;
   text-align: center;
   padding: 14px 16px;    
   text-decoration: none;
+  color: blueviolet;
 }
 
 .navbar-header a:hover {
@@ -104,8 +118,6 @@ body {
   flex: 1;
   padding: 100px;  
   text-align: center;
-  background-color: black;
-  color: white;
 }
 
 .h1-hero {
@@ -122,11 +134,13 @@ body {
 .sidebar-container {
   height: auto;
   width: 20%;
-  margin: 0 40px;
-  color: white;
-  padding: 10px;
+  margin: 0;
+  padding: 0;
   text-align: center;
-  box-shadow: 0 0 30px rgba(255, 255, 255, 0.8); 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  background-color: var(--color-light-background);
+  color: var(--color-light-text);
+  box-sizing: border-box;
 }
 
 .ul-sidebar {
@@ -138,7 +152,7 @@ body {
 
 .ul-sidebar a {
   text-decoration: none;
-  color: white; 
+  color: var(--color-light-text) ;
   display: block;
   padding: 5px;
 }
@@ -155,6 +169,8 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 8px;
+  background-color: var(--color-light-background);
+  color: var(--color-light-text);
 }
 
 .h3-searchbar {
@@ -166,13 +182,13 @@ body {
   padding: 8px;
   border: none;
   outline: none;
-  background-color: #0A0A0A;
-  color: #fff;
+  background-color:#eae8e8 ;
+  color: #0A0A0A;
   font-size: 16px;
 }
 
 .input-searchbar:focus {
-  border: 1px solid #fff;
+  border: 1px solid #6c6c6c;
 }
 /*-------------------------------*/
 
@@ -183,11 +199,14 @@ body {
   gap: 10px;
   justify-content: space-between;
   align-items: flex-start;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
-  margin: 0 60px;
-  color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  margin: 0;
+  padding: 0;
   width: 65%;
   flex-grow: 1;
+  background-color: var(--color-light-background);
+  color: var(--color-light-text) ;
+  box-sizing: border-box;
 }
 
 .no-results {
@@ -203,8 +222,10 @@ body {
   border: 0.5px solid rgb(72, 72, 72);
   border-radius: 30px;
   overflow: hidden;
-  margin: 10px;
   box-sizing: border-box;
+  background-color: var(--color-light-background);
+  color: var(--color-light-text) ;
+  margin-bottom: 50px;
 }
 
 .card-container {
@@ -235,12 +256,13 @@ body {
 
 /*Footer*/
 .footer-container {
-  margin-top: 50px;
   height: 25px;
   color: white;
   padding: 10px;
   text-align: center;
-  background-color: #1a1a1a;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  background-color: var(--color-light-background);
+  color: var(--color-light-text) ;
 }
 
 .p-footer {
