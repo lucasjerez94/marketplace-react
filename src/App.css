@@ -30,6 +30,7 @@ body {
   justify-content: space-between;
   width: 100%;
   box-sizing: border-box;
+  flex: 1;
 }
 
 .app-footer-container {
@@ -328,7 +329,6 @@ body {
   /*SIDEBAR*/
   .sidebar-container{
     margin: 0;
-    margin-bottom: 20px;
     width: 100%;
   }
   /*SEARCHBAR*/
@@ -388,7 +388,6 @@ body {
   /*SIDEBAR*/
   .sidebar-container{
     margin: 0;
-    margin-bottom: 20px;
     width: 100%;
   }
   /*SEARCHBAR*/
