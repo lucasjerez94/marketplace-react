@@ -70,7 +70,7 @@ body {
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 10px rgba(89, 89, 89, 0.8);
   background-color: var(--color-light-background);
   color: var(--color-light-text) ;
 }
@@ -138,7 +138,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 10px rgba(89, 89, 89, 0.8);
   background-color: var(--color-light-background);
   color: var(--color-light-text);
   box-sizing: border-box;
@@ -202,7 +202,7 @@ body {
   gap: 10px;
   justify-content: space-between;
   align-items: flex-start;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 10px rgba(89, 89, 89, 0.8);
   margin: 0;
   padding: 0;
   width: 65%;
@@ -227,6 +227,7 @@ body {
   overflow: hidden;
   box-sizing: border-box;
   background-color: var(--color-light-background);
+  box-shadow: 0 0 10px rgba(89, 89, 89, 0.8);
   color: var(--color-light-text) ;
   margin-bottom: 50px;
 }
@@ -263,7 +264,7 @@ body {
   color: white;
   padding: 10px;
   text-align: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 10px rgba(89, 89, 89, 0.8);
   background-color: var(--color-light-background);
   color: var(--color-light-text) ;
 }
