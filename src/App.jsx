@@ -13,21 +13,19 @@ function App() {
   }
 
   return (
-    <StylesProvider>
-      <div className='app-header-container'>
-        <Header />
-        <div className='app-hero-container'>
-          <Hero />
-        </div>
-          <div className='app-main-container'>
-            <Sidebar onSearch={handleSearch} />
-            <Main searchTerm={searchTerm} />
-          </div>
-        <div className='app-footer-container'>
-            <Footer />
-        </div>
-      </div>
-    </StylesProvider>
+    <div className="App">
+      <StylesProvider>
+          <Header />
+            <Hero />
+            <div className="prueba">
+              <div className="app-main-container">
+                <Sidebar onSearch={handleSearch} />
+                <Main searchTerm={searchTerm} />
+              </div>
+            </div>
+              <Footer />
+      </StylesProvider>
+    </div>
   );
 }
 export default App;
