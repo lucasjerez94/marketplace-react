@@ -23,7 +23,7 @@ function App() {
                 <Main searchTerm={searchTerm} />
               </div>
             </div>
-              <Footer />
+            <Footer />
       </StylesProvider>
     </div>
   );
